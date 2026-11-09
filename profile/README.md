@@ -25,6 +25,18 @@ We enable publishers to sell, manage and optimize their ad spaces with a consoli
   <img alt="Every channel, one card index: DOOH, OOH, Print and Radio flow into one order, one report, one invoice." src="./assets/channels-light.svg" width="100%">
 </picture>
 
+### Newsroom
+
+<!-- NEWS:START -->
+<p>
+<a href="https://onetech.group/pdooh-wird-erwachsen-und-zwingt-marketingteams-zur-neuordnung/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/news-1-dark.svg"><img alt="pDOOH wird erwachsen – und zwingt Marketingteams zur Neuordnung" src="./assets/news-1-light.svg" width="32%"></picture></a>
+<a href="https://onetech.group/rossmann-setzt-bei-retail-media-auf-die-one-tech-group/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/news-2-dark.svg"><img alt="Rossmann setzt bei Retail-Media auf die One Tech Group" src="./assets/news-2-light.svg" width="32%"></picture></a>
+<a href="https://onetech.group/consumer-electronics-retailer-mediamarktsaturn-taps-one-tech-group-retail-media-platform/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/news-3-dark.svg"><img alt="Consumer electronics retailer MediaMarktSaturn taps One Tech Group retail media platform" src="./assets/news-3-light.svg" width="32%"></picture></a>
+</p>
+<!-- NEWS:END -->
+
+<sub>Latest from <a href="https://onetech.group">onetech.group</a>, updated daily.</sub>
+
 ### Work with us
 
 We build programmatic advertising for DOOH and Retail Media in Düsseldorf. Flat hierarchies, cross-functional teams, direct access to decision-makers. → [Open roles and unsolicited applications](https://onetech.group/careers)
