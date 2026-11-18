@@ -17,7 +17,7 @@ We enable publishers to sell, manage and optimize their ad spaces with a consoli
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/products-dark.svg">
-  <img alt="Four products, one platform: AdServer1 for direct sales, booking and playout; SSP1 for programmatic monetization with yield control; DMP1 for audiences and data signals; NMS1 to operate and monitor screen networks." src="./assets/products-light.svg" width="100%">
+  <img alt="Four products, one platform: ADSERVER1 for direct sales, booking and playout; SSP1 for programmatic monetization with yield control; DMP1 for audiences and data signals; NMS1 to operate and monitor screen networks." src="./assets/products-light.svg" width="100%">
 </picture>
 
 <picture>

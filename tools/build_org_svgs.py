@@ -58,7 +58,7 @@ def svg(w, h, title, style, body):
 
 
 PRODUCTS = [
-    ("01", "AdServer1", "Direct sales, booking and", "playout for your inventory.", ["BOOKING", "PLAYOUT"]),
+    ("01", "ADSERVER1", "Direct sales, booking and", "playout for your inventory.", ["BOOKING", "PLAYOUT"]),
     ("02", "SSP1", "Programmatic monetization", "with full yield control.", ["PG", "PMP", "RTB"]),
     ("03", "DMP1", "Audiences and data signals", "across every touchpoint.", ["AUDIENCES"]),
     ("04", "NMS1", "Operate and monitor your", "whole screen network.", ["MONITORING"]),
@@ -172,7 +172,7 @@ def products(t):
                      f'<text class="mono" x="{tx+8}" y="302" font-size="10" fill="{t["link"]}">{tag}</text>')
             tx += w + 6
         g.append('</g>')
-    return svg(W, H, "Four products, one platform: AdServer1 for direct sales, booking and playout; SSP1 for programmatic "
+    return svg(W, H, "Four products, one platform: ADSERVER1 for direct sales, booking and playout; SSP1 for programmatic "
                "monetization with yield control; DMP1 for audiences and data signals; NMS1 to operate and monitor screen networks.",
                style, "".join(g))
 
