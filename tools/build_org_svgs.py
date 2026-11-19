@@ -71,10 +71,12 @@ def header(t):
     W, H = 1200, 340
     px, py = 930, 352  # pivot of the hand (below the cards)
     angles = [-21, -7, 7, 21]
+    # Ambient loop: 9 s, DS easing "emphasized" (BRAND.md, Bewegung). Endless by decision
+    # (WCAG 2.2.2 deviation, decorative); stops under prefers-reduced-motion.
     fan = []
     for i, a in enumerate(angles):
         fan.append(f"@keyframes f{i}{{0%,8%{{transform:rotate(0deg)}}30%,78%{{transform:rotate({a}deg)}}96%,100%{{transform:rotate(0deg)}}}}"
-                   f".c{i}{{transform-box:view-box;transform-origin:{px}px {py}px;animation:f{i} 9s cubic-bezier(.3,.7,.2,1) infinite}}")
+                   f".c{i}{{transform-box:view-box;transform-origin:{px}px {py}px;animation:f{i} 9s cubic-bezier(.2,.8,.2,1) infinite}}")
     style = font_css() + BASE_CSS + "".join(fan) + f"""
 @media (prefers-reduced-motion: reduce){{{''.join(f'.c{i}{{transform:rotate({a}deg)}}' for i, a in enumerate(angles))}}}
 @keyframes rise{{from{{opacity:0;transform:translateY(8px)}}to{{opacity:1;transform:none}}}}
