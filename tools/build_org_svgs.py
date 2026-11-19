@@ -246,6 +246,8 @@ def channels(t):
     style = font_css(mono_bold=True) + BASE_CSS + """
 @keyframes dash{to{stroke-dashoffset:-24}}
 .flow{stroke-dasharray:3 9;animation:dash 1.2s linear infinite}
+/* SMIL ignores CSS animation:none, so the travelling dots are hidden instead. */
+@media (prefers-reduced-motion: reduce){.dot{display:none}}
 """
     g = [f'<rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="12" fill="{t["card"]}" stroke="{t["border"]}"/>',
          f'<text class="sans" x="32" y="66" font-size="24" font-weight="620" letter-spacing="-.5" fill="{t["text"]}">Every channel.</text>',
@@ -257,7 +259,7 @@ def channels(t):
         path = f"M{x+86},{y} C{x+220},{y} {tx-200},{ty} {tx-120},{ty}"
         g.append(f'<path d="{path}" fill="none" stroke="{t["border"]}" stroke-width="1.5"/>')
         g.append(f'<path class="flow" d="{path}" fill="none" stroke="{t["primary"]}" stroke-width="1.5" opacity=".5"/>')
-        g.append(f'<circle r="3.5" fill="{t["primary"]}"><animateMotion dur="2.6s" begin="{i*0.65}s" repeatCount="indefinite" path="{path}"/></circle>')
+        g.append(f'<circle class="dot" r="3.5" fill="{t["primary"]}"><animateMotion dur="2.6s" begin="{i*0.65}s" repeatCount="indefinite" path="{path}"/></circle>')
         g.append(f'<rect x="{x}" y="{y-12}" width="86" height="24" rx="12" fill="{t["section"]}" stroke="{t["border"]}"/>'
                  f'<circle cx="{x+14}" cy="{y}" r="2.5" fill="{t["link"]}"/>'
                  f'<text class="mono" x="{x+24}" y="{y+4}" font-size="11" fill="{t["secondary"]}">{ch_}</text>')
